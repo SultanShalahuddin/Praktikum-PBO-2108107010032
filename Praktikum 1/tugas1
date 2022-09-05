@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class tugas1{
+
+     public static void main(String[] args) {
+          Scanner disc = new Scanner(System.in);
+          int jumlah;
+          int harga_barang;
+          int harga_diskon;
+          int total_harga;
+          int diskon;
+          int harga_akhir;
+
+          
+          System.out.print("masukkan jumlah barang: ");
+          jumlah=disc.nextInt();
+          System.out.print("masukkan harga barang : ");
+          harga_barang=disc.nextInt();
+          total_harga = jumlah * harga_barang;
+          diskon = total_harga * 15 / 100; 
+          harga_akhir = total_harga - diskon;
+          System.out.print("Jumlah harga setelah diskon 15 % adalah: " + harga_akhir);
+
+     }
+}
